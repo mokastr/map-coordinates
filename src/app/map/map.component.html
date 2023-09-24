@@ -1,0 +1,22 @@
+<div>
+	<div class='wrapper'>
+		<mat-form-field class='select'>
+			<mat-label>Выберите город</mat-label>
+			<mat-select [(ngModel)]="selectedCity" name="item" (ngModelChange)="onCityChange($event)">
+				<mat-option>Очистить</mat-option>
+				<mat-option *ngFor="let item of mapDates" [value]="item.coordinates">
+					{{item.city}}
+				</mat-option>
+			</mat-select>
+		</mat-form-field>
+		<button class="clear-button" mat-raised-button color="primary" (click)="onReset()">Сбросить
+			координаты</button>
+	</div>
+
+	<div class="map-container">
+		<div class="map-frame">
+			<div id="map"></div>
+		</div>
+	</div>
+
+</div>

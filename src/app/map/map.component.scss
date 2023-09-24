@@ -1,0 +1,31 @@
+.map-container {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 30px;
+}
+
+.map-frame {
+	border: 2px solid black;
+	height: 100%;
+}
+
+#map {
+	height: 100%;
+}
+.wrapper {
+	height: 100px;
+	display: flex;
+	align-items: center;
+}
+.select {
+	margin: 20px 0px 0 30px;
+	width: 200px;
+}
+
+.clear-button {
+	margin-left: 20px;
+	height: 56px;
+}
